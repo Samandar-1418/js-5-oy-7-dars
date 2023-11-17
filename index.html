@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>vazifa</title>
+</head>
+<body>
+    <div class="create-form">
+        <input type="text"  placeholder="Mashinani kiriting..." id="name">
+        <input type="number" placeholder="Yilini kiriting..." id="year">
+        <input type="text" placeholder="Rangini kiriting..." id="color">
+        <input type="number" placeholder="Narxini kiriting..." id="price">
+       <input type="button" value="Qo'shish" id="addbtn">
+    </div>
+    <div class="wrapper">
+        <form>
+            <select name="name" id="namefilter">
+                <option selected value="">Mashinalarni tanlang...</option>
+                <option value="Damas">Damas</option>
+                <option value="Spark">Spark</option>
+                <option value="Nexia">Nexia</option>
+                <option value="Cobalt">Cobalt</option>
+                <option value="Malibu">Malibu</option>
+                <option value="Matiz">Matiz</option>
+                <option value="Tico">Tico</option>
+            </select>
+            <select name="color" id="colorfilter">
+                <option selected value="">Rangini tanlang...</option>
+                <option value="Qora">Qora</option>
+                <option value="Oq">Oq</option>
+                <option value="Yashil">Yashil</option>
+                <option value="Ko'k">Ko'k</option>
+                <option value="Sariq">Sariq</option>
+                <option value="Qizil">Qizil</option>
+            </select>
+            <select name="price" id="pricefilter">
+                <option selected value="">Narxini tanlang...</option>
+                <option value="2000">2000$</option>
+                <option value="2500">2500$</option>
+                <option value="3000">3000$</option>
+                <option value="3500">3500$</option>
+                <option value="4000">4000$</option>
+                <option value="4500">4500$</option>
+                <option value="5000">5000$</option>
+                <option value="10000">10000$</option>
+                <option value="15000">15000$</option>
+                <option value="20000">20000$</option>
+            </select>
+            <select name="year" id="yearfilter">
+                <option selected value="">Yilini toping...</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+            </select>
+            <select name="status" id="statusfilter">
+                <option selected value="">Holatini tanlang...</option>
+                <option value="active">Sotilmagan</option>
+                <option value="inactive">Sotilgan</option>
+            </select><br>
+
+            <input type="search" value="" placeholder="Qidiruv..." id="search">
+        </form>
+        <table>
+         <thead>
+            <tr>
+                <th>N</th>
+                <th>Nomi</th>
+                <th>Rangi</th>
+                <th>Narxi</th>
+                <th>Yili</th>
+                <th>Xolati</th>
+            </tr>
+         </thead>
+         <tbody id="tbody">
+
+         </tbody>
+        </table>
+    </div>
+ <script src="./js/script.js"></script>   
+</body>
+</html>
